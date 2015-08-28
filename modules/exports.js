@@ -1,20 +1,33 @@
-// Export a function
-export function app(){
+// Exporting a function
+export function Arva(){
+
 
 }
 
 
-// Export a class
+
+
+// // Exporting a class
 export class App{
 
 }
 
-export let company = 'Bizboard';
+// export let company = 'Bizboard';
 
-export 
+// export const engineers = ['Hans', 'Tom'];
 
 
-// This function isn't exported
-function helper(){
+// // This function isn't exported
+// function helper(){
 
-}
+// }
+
+// export {detectCats, Kittydar};
+
+// // no `export` keyword required here
+// function detectCats(canvas, options) { ... }
+// class Kittydar { ... }
+
+
+// // Default export 
+// export default function ()

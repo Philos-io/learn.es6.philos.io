@@ -1,16 +1,3 @@
-// Export a function
-export function app(){
-	
-}
+// Import
 
-
-// Export a class
-export class App{
-
-}
-
-
-// This function isn't exported
-function helper(){
-
-}
+import {Arva} from './export';

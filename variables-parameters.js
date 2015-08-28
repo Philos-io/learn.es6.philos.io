@@ -34,3 +34,10 @@ export default url = `https://api.github.com/${login}/repo`;
 
 console.log(url);
 
+
+// for (var i = 0; i < messages.length; i++) {
+//   setTimeout(function () {
+//     cat.say(messages[i]);
+//   }, i * 1500);
+// }
+
