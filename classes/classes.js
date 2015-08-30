@@ -5,5 +5,5 @@ class User(){
 
 	}
 
-	get
+	
 }
