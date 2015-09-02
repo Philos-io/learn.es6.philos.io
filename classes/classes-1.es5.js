@@ -1,38 +1,63 @@
 // From hack Mozilla
-
-function Circle(radius) {
-    this.radius = radius;
+function User(info) {
+    this.firstname = info.name;
+    this.lastname = info.
     Circle.circlesMade++;
 }
 
-Circle.draw = function draw(circle, canvas) {
-
+User.run = function run() {
+    console.log('running');
 }
 
-Object.defineProperty(Circle, "circlesMade", {
+Object.defineProperty(User, "firstname", {
     get: function() {
-        return !this._count ? 0 : this._count;
+        return !this._firstname ? 0 : this._firstname;
     },
 
     set: function(val) {
-        this._count = val;
+        this._firstname = val;
     }
 });
 
-Circle.prototype = {
-    area: function area() {
-        return Math.pow(this.radius, 2) * Math.PI;
+User.prototype = {
+    sayName: function sayName() {
+        console.log(this.firstname);
     }
 };
 
-Object.defineProperty(Circle.prototype, "radius", {
+Object.defineProperty(User, "age", {
     get: function() {
-        return this._radius;
+        return this._age;
     },
 
-    set: function(radius) {
-        if (!Number.isInteger(radius))
-            throw new Error("Circle radius must be an integer.");
-        this._radius = radius;
+    set: function(age) {
+        if (!Number.isInteger(age))
+            throw new Error("User's age must be an integer.");
+        this._age = age;
     }
 });
+
+
+var user = new User();
+
+class User{
+    constructor(){
+
+    },
+
+    static run(){
+        console.log('running');
+    }
+
+    get firstname(){
+        return !this._firstname ? 0 : this._firstname;
+    }
+
+    set firstname(val){
+        this._firstname = val;
+    }
+
+    sayName(){
+        console.log(this.firstname);   
+    }
+}
