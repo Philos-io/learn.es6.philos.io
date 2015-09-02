@@ -1,16 +1,31 @@
 // Exporting a function
 export function Arva(){
+	var app = new Application();
 
+	manageApp(app);
+}
 
+function manageApp(application){
+	console.log(application);
+}
+
+// Exporting a class
+export class Application{
+	run(){
+		console.log('the app is running');
+	}
 }
 
 
 
 
-// // Exporting a class
-export class App{
 
-}
+
+
+
+
+
+
 
 // export let company = 'Bizboard';
 
