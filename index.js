@@ -1,2 +1,2 @@
-import url from './variables-parameters';
+import url from './modules/import.js';
 
